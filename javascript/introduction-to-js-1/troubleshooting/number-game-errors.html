@@ -44,8 +44,8 @@
     </div>
 
     <script>
-      let randomNumber = Math.floor(Math.random()) + 1;
-
+      let randomNumber = Math.floor(Math.random()*100) + 1; // added *100 to get number between 0 and 99.
+      console.log(randomNumber); //debug for line 47.
       const guesses = document.querySelector(".guesses");
       const lastResult = document.querySelector(".lastResult");
       const lowOrHi = document.querySelector(".lowOrHi"); //  .(dot) added for class selector.
@@ -111,7 +111,8 @@
 
         lastResult.style.backgroundColor = "white";
 
-        randomNumber = Math.floor(Math.random()) + 1;
+        randomNumber = Math.floor(Math.random() *100) + 1; // added *100 to get random number between 0 and 99.
+        console.log(randomNumber); //debug line 114.
       }
     </script>
   </body>
